@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <TextView
+        android:id="@+id/magnitude_text"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/magnitude_circle"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        tools:text="7.9"
+        />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+    <TextView
+        android:id="@+id/position_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="50km NNE of"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+
+        />
+        <TextView
+            android:id="@+id/place_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            tools:text="Al Hoceima, Morocco"
+            android:textColor="#3d5166"
+            android:textStyle="bold"
+            android:layout_alignStart="@+id/position_text"
+            android:layout_below="@+id/position_text"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Feb 2,2016"
+        android:layout_alignParentRight="true"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_text"
+            android:textSize="11sp"
+            android:layout_alignEnd="@+id/date_text"
+            tools:text="11:08 PM"
+            android:paddingRight="16dp"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>
